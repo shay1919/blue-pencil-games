@@ -1,0 +1,102 @@
+// Variables
+
+$light-color: #f4f4f4;
+$dark-color: #333;
+$medium-color: #ccc;
+$main-color: #00c3ff;
+
+
+
+// General Styles
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: $dark-color;
+    background-color: $light-color;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+
+
+h1 {
+    font-size: 5rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+
+h3 {
+    font-size: 1.75rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+
+// Utility Classes
+
+%btn-shared {
+    display: inline-block;
+    margin: 1.5rem;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    letter-spacing: normal;
+    border-radius: 5%
+}
+
+
+
+.btn {
+    &-main {
+        @extend %btn-shared;
+        color: $light-color;
+        background-color: $main-color
+    }
+
+    &-light {
+        @extend %btn-shared;
+        color: $dark-color;
+        background-color: $light-color;
+    }
+
+    &-dark {
+        @extend %btn-shared;
+        color: $light-color;
+        background-color: $dark-color;
+    }
+}
+
+
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+    filter: brightness(0.9);
+}
+
+
+
+// Main Nav
