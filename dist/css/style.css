@@ -3,13 +3,17 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  color: #333;
-  background-color: #f4f4f4;
   font-family: "ABeeZee", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 a {
   text-decoration: none;
+  color: #f4f4f4;
 }
 
 ul {
@@ -29,6 +33,12 @@ h2 {
 h3 {
   font-size: 1.75rem;
   font-family: "Amatic SC", cursive;
+}
+
+.container {
+  max-width: 1600px;
+  margin: auto;
+  overflow: hidden;
 }
 
 .btn-dark, .btn-light, .btn-main {
@@ -59,6 +69,25 @@ button[class^=btn-]:hover,
 a[class^=btn-]:hover,
 input[class^=btn-]:hover {
   filter: brightness(0.9);
+}
+
+#header-home {
+  background-color: #00c3ff;
+  color: #f4f4f4;
+}
+#header-home .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header-home #logo {
+  width: 80px;
+  height: 100%;
+  background-color: #00c3ff;
+  padding: 5px;
+}
+#header-home ul {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

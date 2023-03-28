@@ -4,6 +4,7 @@ $light-color: #f4f4f4;
 $dark-color: #333;
 $medium-color: #ccc;
 $main-color: #00c3ff;
+$website-width: 1600px;
 
 
 
@@ -14,15 +15,21 @@ $main-color: #00c3ff;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    color: $dark-color;
-    background-color: $light-color;
     font-family: 'ABeeZee', sans-serif;
+}
+
+
+
+body {
+    background-color: $light-color;
+    color: $dark-color;
 }
 
 
 
 a {
     text-decoration: none;
+    color: $light-color;
 }
 
 
@@ -55,6 +62,14 @@ h3 {
 
 
 // Utility Classes
+
+.container {
+    max-width: $website-width;
+    margin: auto;
+    overflow: hidden;
+}
+
+
 
 %btn-shared {
     display: inline-block;
@@ -99,4 +114,29 @@ input[class^='btn-']:hover {
 
 
 
-// Main Nav
+// Header
+
+#header {
+
+    &-home {
+        background-color: $main-color;
+        color: $light-color;
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #logo {
+            width: 80px;
+            height: 100%;
+            background-color: $main-color;
+            padding: 5px;
+        }
+
+        ul {
+            display: flex;
+        }
+    }
+}
