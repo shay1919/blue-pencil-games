@@ -20,19 +20,22 @@ ul {
   list-style: none;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Amatic SC", cursive;
+}
+
 h1 {
   font-size: 5rem;
-  font-family: "Amatic SC", cursive;
 }
 
 h2 {
   font-size: 2.5rem;
-  font-family: "Amatic SC", cursive;
 }
 
 h3 {
   font-size: 1.75rem;
-  font-family: "Amatic SC", cursive;
 }
 
 .container {
@@ -48,7 +51,6 @@ h3 {
   transition: all 0.3s;
   border: none;
   cursor: pointer;
-  letter-spacing: normal;
   border-radius: 5%;
 }
 
@@ -77,17 +79,22 @@ input[class^=btn-]:hover {
 }
 #header-home .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  border: 2px solid #fff;
 }
-#header-home #logo {
+#header-home .container #logo {
   width: 80px;
-  height: 100%;
-  background-color: #00c3ff;
-  padding: 5px;
+  padding: 0.25rem;
 }
-#header-home ul {
+#header-home .container nav {
+  border: 2px solid #fff;
+}
+#header-home .container nav ul {
   display: flex;
+}
+#header-home .container nav ul li {
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
