@@ -125,30 +125,8 @@ input[class^='btn-']:hover {
     &-home {
         background-color: $main-color;
         color: $light-color;
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border: 2px solid #fff;
-
-            #logo {
-                width: 80px;
-                padding: 0.25rem;
-
-            }
-
-            nav {
-                border: 2px solid #fff;
-
-                ul {
-                    display: flex;
-
-                    li {
-                        padding: 0 1rem;
-                    }
-                }
-            }
-        }
+        justify-content: center;
+        align-items: center;
+        border: 2px solid yellow;
     }
 }

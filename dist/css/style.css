@@ -76,25 +76,9 @@ input[class^=btn-]:hover {
 #header-home {
   background-color: #00c3ff;
   color: #f4f4f4;
-}
-#header-home .container {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border: 2px solid #fff;
-}
-#header-home .container #logo {
-  width: 80px;
-  padding: 0.25rem;
-}
-#header-home .container nav {
-  border: 2px solid #fff;
-}
-#header-home .container nav ul {
-  display: flex;
-}
-#header-home .container nav ul li {
-  padding: 0 1rem;
+  border: 2px solid yellow;
 }
 
 /*# sourceMappingURL=style.css.map */
