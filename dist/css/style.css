@@ -74,11 +74,22 @@ input[class^=btn-]:hover {
 }
 
 #header-home {
+  display: flex;
   background-color: #00c3ff;
   color: #f4f4f4;
+}
+#header-home .container {
   justify-content: center;
   align-items: center;
-  border: 2px solid yellow;
+}
+#header-home #logo {
+  max-height: 10svh;
+}
+#header-home nav ul {
+  display: flex;
+}
+#header-home nav ul li {
+  padding-right: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
