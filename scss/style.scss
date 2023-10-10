@@ -119,32 +119,3 @@ input[class^='btn-']:hover {
 
 
 // Header
-
-#header {
-
-    &-home {
-        display: flex;
-        background-color: $main-color;
-        color: $light-color;
-
-        .container {
-            justify-content: center;
-            align-items: center;
-        }
-
-        #logo {
-            max-height: 10svh;
-        }
-
-        nav {
-
-            ul {
-                display: flex;
-
-                li {
-                    padding-right: 2rem;
-                }
-            }
-        }
-    }
-}
