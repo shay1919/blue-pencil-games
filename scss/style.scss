@@ -3,7 +3,8 @@
 $light-color: #f4f4f4;
 $dark-color: #333;
 $medium-color: #ccc;
-$main-color: #00c3ff;
+$light-blue: #00c3ff;
+$dark-blue: #0066ffa4;
 $website-width: 1600px;
 
 
@@ -21,7 +22,7 @@ $website-width: 1600px;
 
 
 body {
-    background-color: $light-color;
+    background-color: $light-blue;
     color: $dark-color;
 }
 
@@ -29,7 +30,7 @@ body {
 
 a {
     text-decoration: none;
-    color: $light-color;
+    color: $dark-color;
 }
 
 
@@ -44,6 +45,7 @@ h1,
 h2,
 h3 {
     font-family: 'Amatic SC', cursive;
+    color: $dark-blue;
 }
 
 
@@ -92,7 +94,7 @@ h3 {
     &-main {
         @extend %btn-shared;
         color: $light-color;
-        background-color: $main-color
+        background-color: $light-blue
     }
 
     &-light {
@@ -114,6 +116,16 @@ button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
     filter: brightness(0.9);
+}
+
+
+
+// Paper Background
+
+#paper-background {
+    background-image: url(/dist/img/paper.jpg);
+    box-shadow: 10px 10px 10px 10px $dark-color;
+    height: 100svh;
 }
 
 
