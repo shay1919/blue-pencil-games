@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: #00c3ff;
-  color: #333;
+  background-image: url(/dist/img/wood-background.jpg);
+  color: #000;
 }
 
 a {
@@ -78,6 +78,7 @@ input[class^=btn-]:hover {
 #paper-background {
   background-image: url(/dist/img/paper.jpg);
   box-shadow: 0 0 50px 0 #333;
+  margin-top: 1rem;
   height: 100svh;
 }
 
@@ -102,6 +103,14 @@ nav ul a {
 nav ul a:hover {
   border-color: rgba(0, 102, 255, 0.6431372549);
   transition: all 0.5s;
+}
+
+#our-story {
+  text-align: center;
+}
+#our-story img {
+  max-width: 900px;
+  margin: 5rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
