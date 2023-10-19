@@ -32,11 +32,15 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.25rem;
 }
 
 .container {
@@ -46,40 +50,11 @@ h3 {
   padding: 2rem 5rem;
 }
 
-.btn-dark, .btn-light, .btn-main {
-  display: inline-block;
-  margin: 1.5rem;
-  padding: 1rem 1.5rem;
-  transition: all 0.3s;
-  border: none;
-  cursor: pointer;
-  border-radius: 5%;
-}
-
-.btn-main {
-  color: #f4f4f4;
-  background-color: #00c3ff;
-}
-.btn-light {
-  color: #333;
-  background-color: #f4f4f4;
-}
-.btn-dark {
-  color: #f4f4f4;
-  background-color: #333;
-}
-
-button[class^=btn-]:hover,
-a[class^=btn-]:hover,
-input[class^=btn-]:hover {
-  filter: brightness(0.9);
-}
-
 #paper-background {
   background-image: url(/dist/img/paper.jpg);
   box-shadow: 0 0 50px 0 #333;
   margin-top: 1rem;
-  height: 100svh;
+  min-height: 100svh;
 }
 
 nav {
@@ -111,6 +86,31 @@ nav ul a:hover {
 #our-story img {
   max-width: 900px;
   margin: 5rem 0;
+}
+#our-story p {
+  margin-bottom: 5rem;
+}
+
+#our-games {
+  text-align: center;
+}
+#our-games #games-grid {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+#our-games #games-grid .game {
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 25rem;
+  font-family: "Amatic SC", cursive;
+  font-weight: bolder;
+  font-size: 3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+#our-games #games-grid .game:hover {
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
