@@ -102,6 +102,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    // to do - sticky nav?
 
     ul {
         display: flex;
@@ -120,7 +123,7 @@ nav {
 
             &:hover {
                 border-color: $dark-blue;
-                transition: all 0.5s;
+                transition: all 0.3s;
             }
         }
     }
@@ -132,6 +135,7 @@ nav {
 
 #our-story {
     text-align: center;
+    min-height: 100svh;
 
     img {
         max-width: 900px;
@@ -149,6 +153,7 @@ nav {
 
 #our-games {
     text-align: center;
+    min-height: 100svh;
 
     #games-grid {
         display: grid;
@@ -156,18 +161,28 @@ nav {
         grid-template-columns: repeat(3, 1fr);
 
         .game {
-            border: 1px solid black;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
             border-radius: 10px;
             height: 25rem;
             font-family: 'Amatic SC', cursive;
             font-weight: bolder;
             font-size: 3rem;
+            color: #fff;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
             transition: 0.3s;
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
         }
 
         .game:hover {
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
         }
+
+        #infantry-attack {
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('/dist/img/infantry-attack.png');
+        }
     }
 }
+
+// to do - figure out how to resize everything to 100svh

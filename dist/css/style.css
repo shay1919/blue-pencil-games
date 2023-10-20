@@ -61,6 +61,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 nav ul {
   display: flex;
@@ -77,11 +79,12 @@ nav ul a {
 }
 nav ul a:hover {
   border-color: rgba(0, 102, 255, 0.6431372549);
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 #our-story {
   text-align: center;
+  min-height: 100svh;
 }
 #our-story img {
   max-width: 900px;
@@ -93,6 +96,7 @@ nav ul a:hover {
 
 #our-games {
   text-align: center;
+  min-height: 100svh;
 }
 #our-games #games-grid {
   display: grid;
@@ -100,17 +104,24 @@ nav ul a:hover {
   grid-template-columns: repeat(3, 1fr);
 }
 #our-games #games-grid .game {
-  border: 1px solid black;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   border-radius: 10px;
   height: 25rem;
   font-family: "Amatic SC", cursive;
   font-weight: bolder;
   font-size: 3rem;
+  color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: 0.3s;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
 }
 #our-games #games-grid .game:hover {
   box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+#our-games #games-grid #infantry-attack {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/dist/img/infantry-attack.png");
 }
 
 /*# sourceMappingURL=style.css.map */
