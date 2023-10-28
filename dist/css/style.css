@@ -61,19 +61,17 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
 }
 nav ul {
   display: flex;
 }
 nav ul li:nth-child(2) {
-  padding: 0 5rem;
+  padding-left: 5rem;
 }
 nav ul a {
   font-family: "Amatic SC", cursive;
-  color: rgba(0, 102, 255, 0.6431372549);
   font-weight: bold;
+  color: rgba(0, 102, 255, 0.6431372549);
   font-size: 2.5rem;
   border-bottom: 2px transparent solid;
 }
@@ -82,33 +80,48 @@ nav ul a:hover {
   transition: all 0.3s;
 }
 
+#back-to-top {
+  position: fixed;
+  bottom: 10rem;
+  right: 11rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 3rem;
+  background-image: url(/dist/img/paper.jpg);
+}
+
 #our-story {
   text-align: center;
-  min-height: 100svh;
 }
 #our-story img {
-  max-width: 900px;
   margin: 5rem 0;
-}
-#our-story p {
-  margin-bottom: 5rem;
+  max-width: 50%;
+  max-height: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 #our-games {
   text-align: center;
-  min-height: 100svh;
+  height: 100svh;
+  margin-top: 5rem;
 }
-#our-games #games-grid {
+#our-games #game-grid {
   display: grid;
   gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
+  height: 90%;
 }
-#our-games #games-grid .game {
+#our-games #game-grid .game {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   border-radius: 10px;
-  height: 25rem;
+  height: 100%;
   font-family: "Amatic SC", cursive;
   font-weight: bolder;
   font-size: 3rem;
@@ -117,11 +130,14 @@ nav ul a:hover {
   transition: 0.3s;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
 }
-#our-games #games-grid .game:hover {
+#our-games #game-grid .game:hover {
   box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
 }
-#our-games #games-grid #infantry-attack {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/dist/img/infantry-attack.png");
+#our-games #game-grid #infantry-attack {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("/dist/img/infantry-attack.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

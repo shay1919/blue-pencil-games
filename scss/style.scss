@@ -85,7 +85,7 @@ p {
 
 
 
-// Paper Background
+// Paper Backgrounds
 
 #paper-background {
     background-image: url(/dist/img/paper.jpg);
@@ -96,27 +96,25 @@ p {
 
 
 
-// Header
+// Nav
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    // to do - sticky nav?
+    // to do - fixed nav
 
     ul {
         display: flex;
 
         li:nth-child(2) {
-            padding: 0 5rem;
+            padding-left: 5rem;
         }
 
         a {
             font-family: 'Amatic SC', cursive;
-            color: $dark-blue;
             font-weight: bold;
+            color: $dark-blue;
             font-size: 2.5rem;
             border-bottom: 2px transparent solid;
 
@@ -131,19 +129,36 @@ nav {
 
 
 
+// Buttons
+
+#back-to-top {
+    // display: none;
+    position: fixed;
+    bottom: 10rem;
+    right: 11rem;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 3rem;
+    background-image: url(/dist/img/paper.jpg);
+}
+
+
+
 // Our Story
 
 #our-story {
     text-align: center;
-    min-height: 100svh;
 
     img {
-        max-width: 900px;
         margin: 5rem 0;
-    }
-
-    p {
-        margin-bottom: 5rem;
+        max-width: 50%;
+        max-height: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
     }
 }
 
@@ -153,19 +168,21 @@ nav {
 
 #our-games {
     text-align: center;
-    min-height: 100svh;
+    height: 100svh;
+    margin-top: 5rem;
 
-    #games-grid {
+    #game-grid {
         display: grid;
         gap: 3rem;
         grid-template-columns: repeat(3, 1fr);
+        height: 90%;
 
         .game {
             display: flex;
             align-items: flex-end;
             justify-content: center;
             border-radius: 10px;
-            height: 25rem;
+            height: 100%;
             font-family: 'Amatic SC', cursive;
             font-weight: bolder;
             font-size: 3rem;
@@ -180,9 +197,10 @@ nav {
         }
 
         #infantry-attack {
-            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('/dist/img/infantry-attack.png');
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('/dist/img/infantry-attack.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
     }
 }
-
-// to do - figure out how to resize everything to 100svh
