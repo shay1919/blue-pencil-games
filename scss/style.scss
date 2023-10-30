@@ -22,7 +22,7 @@ $website-width: 1600px;
 
 
 body {
-    background-image: url(dist/img/wood-background.jpg);
+    background-image: url(../../dist/img/wood-background.jpg);
     color: #000;
 }
 
@@ -88,7 +88,7 @@ p {
 // Paper Backgrounds
 
 #paper-background {
-    background-image: url(dist/img/paper.jpg);
+    background-image: url(../../dist/img/paper.jpg);
     box-shadow: 0 0 50px 0 $dark-color;
     margin-top: 1rem;
     min-height: 100svh;
@@ -178,7 +178,7 @@ nav {
         }
 
         #infantry-attack {
-            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('dist/img/infantry-attack.png');
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../../dist/img/infantry-attack.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
