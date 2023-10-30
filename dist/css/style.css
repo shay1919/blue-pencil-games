@@ -80,20 +80,6 @@ nav ul a:hover {
   transition: all 0.3s;
 }
 
-#back-to-top {
-  position: fixed;
-  bottom: 10rem;
-  right: 11rem;
-  z-index: 99;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 30px;
-  font-size: 3rem;
-  background-image: url(/dist/img/paper.jpg);
-}
-
 #our-story {
   text-align: center;
 }
@@ -154,7 +140,7 @@ nav ul a:hover {
   font-size: 5rem;
   color: rgba(0, 102, 255, 0.6431372549);
 }
-#contact-us .contact-us-grid .contact-us-grid-item i:nth-child(2) {
+#contact-us .contact-us-grid .contact-us-grid-item a:nth-child(2) {
   margin: 0 5rem;
 }
 
