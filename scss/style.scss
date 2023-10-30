@@ -169,7 +169,7 @@ nav {
 #our-games {
     text-align: center;
     height: 100svh;
-    margin-top: 5rem;
+    margin-top: 10rem;
 
     #game-grid {
         display: grid;
@@ -201,6 +201,32 @@ nav {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+        }
+    }
+}
+
+
+
+#contact-us {
+    margin-top: 10rem;
+    text-align: center;
+
+    .contact-us-grid {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
+        .contact-us-grid-item {
+
+            i {
+                font-size: 5rem;
+                color: $dark-blue;
+            }
+
+            i:nth-child(2) {
+                margin: 0 5rem;
+            }
         }
     }
 }

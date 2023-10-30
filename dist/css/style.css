@@ -108,7 +108,7 @@ nav ul a:hover {
 #our-games {
   text-align: center;
   height: 100svh;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 #our-games #game-grid {
   display: grid;
@@ -138,6 +138,24 @@ nav ul a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+#contact-us {
+  margin-top: 10rem;
+  text-align: center;
+}
+#contact-us .contact-us-grid {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+#contact-us .contact-us-grid .contact-us-grid-item i {
+  font-size: 5rem;
+  color: rgba(0, 102, 255, 0.6431372549);
+}
+#contact-us .contact-us-grid .contact-us-grid-item i:nth-child(2) {
+  margin: 0 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
