@@ -189,7 +189,7 @@ nav {
 
 
 #contact-us {
-    margin-top: 10rem;
+    margin: 10rem 0;
     text-align: center;
 
     .contact-us-grid {
@@ -210,4 +210,12 @@ nav {
             }
         }
     }
+}
+
+
+
+footer {
+    height: 5rem;
+    display: flex;
+    align-items: center;
 }
