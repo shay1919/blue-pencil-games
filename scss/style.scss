@@ -5,217 +5,186 @@ $dark-color: #333;
 $medium-color: #ccc;
 $light-blue: #00c3ff;
 $dark-blue: #0066ffa4;
-$website-width: 1600px;
-
-
+$website-width: 80svw;
 
 // General Styles
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'ABeeZee', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'ABeeZee', sans-serif;
 }
-
-
 
 body {
-    background-image: url(../../dist/img/wood-background.jpg);
-    color: #000;
+	background-image: url(../../dist/img/wood-background.jpg);
+	color: #000;
 }
-
-
 
 a {
-    text-decoration: none;
-    color: $dark-color;
+	text-decoration: none;
+	color: $dark-color;
 }
-
-
 
 ul {
-    list-style: none;
+	list-style: none;
 }
-
-
 
 h1,
 h2,
 h3 {
-    font-family: 'Amatic SC', cursive;
-    color: $dark-blue;
+	font-family: 'Amatic SC', cursive;
+	color: $dark-blue;
 }
-
-
 
 h1 {
-    font-size: 5rem;
+	font-size: 5rem;
 }
-
-
 
 h2 {
-    font-size: 4rem;
+	font-size: 4rem;
 }
-
-
 
 h3 {
-    font-size: 3rem;
+	font-size: 3rem;
 }
-
-
 
 p {
-    font-size: 1.25rem;
+	font-size: 1.25rem;
 }
-
-
 
 // Utility Classes
 
 .container {
-    max-width: $website-width;
-    margin: auto;
-    overflow: hidden;
-    padding: 2rem 5rem;
+	max-width: $website-width;
+	margin: auto;
+	overflow: hidden;
+	padding: 2rem 5rem;
 }
-
-
 
 // Paper Backgrounds
 
 #paper-background {
-    background-image: url(../../dist/img/paper.jpg);
-    box-shadow: 0 0 50px 0 $dark-color;
-    margin-top: 1rem;
-    min-height: 100svh;
+	background-image: url(../../dist/img/paper.jpg);
+	box-shadow: 0 0 50px 0 $dark-color;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	min-height: 100svh;
 }
-
-
 
 // Nav
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // to do - fixed nav
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-    ul {
-        display: flex;
+	ul {
+		display: flex;
 
-        li:nth-child(2) {
-            padding-left: 5rem;
-        }
+		li:nth-child(2) {
+			padding-left: 5rem;
+		}
 
-        a {
-            font-family: 'Amatic SC', cursive;
-            font-weight: bold;
-            color: $dark-blue;
-            font-size: 2.5rem;
-            border-bottom: 2px transparent solid;
+		a {
+			font-family: 'Amatic SC', cursive;
+			font-weight: bold;
+			color: $dark-blue;
+			font-size: 2.5rem;
+			border-bottom: 2px transparent solid;
 
-
-            &:hover {
-                border-color: $dark-blue;
-                transition: all 0.3s;
-            }
-        }
-    }
+			&:hover {
+				border-color: $dark-blue;
+				transition: all 0.3s;
+			}
+		}
+	}
 }
-
-
 
 // Our Story
 
 #our-story {
-    text-align: center;
+	text-align: center;
 
-    img {
-        margin: 5rem 0;
-        max-width: 50%;
-        max-height: 50%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
-    }
+	img {
+		margin: 5rem 0;
+		max-width: 50%;
+		max-height: 50%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+		border-radius: 10px;
+	}
 }
-
-
 
 // Our Games
 
 #our-games {
-    text-align: center;
-    height: 100svh;
-    margin-top: 10rem;
+	text-align: center;
+	height: 100svh;
+	margin-top: 10rem;
 
-    #game-grid {
-        display: grid;
-        gap: 3rem;
-        grid-template-columns: repeat(3, 1fr);
-        height: 90%;
+	#game-grid {
+		display: grid;
+		gap: 3rem;
+		grid-template-columns: repeat(3, 1fr);
+		height: 90%;
 
-        .game {
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            border-radius: 10px;
-            height: 100%;
-            font-family: 'Amatic SC', cursive;
-            font-weight: bolder;
-            font-size: 3rem;
-            color: #fff;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-            transition: 0.3s;
-            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-        }
+		.game {
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			border-radius: 10px;
+			height: 100%;
+			font-family: 'Amatic SC', cursive;
+			font-weight: bolder;
+			font-size: 3rem;
+			color: #fff;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+			transition: 0.3s;
+			background-image: linear-gradient(rgba(0, 0, 0, 0),
+					rgba(0, 0, 0, 0.5));
+		}
 
-        .game:hover {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
-        }
+		.game:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+		}
 
-        #infantry-attack {
-            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../../dist/img/infantry-attack.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-    }
+		#infantry-attack {
+			background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+				url('../../dist/img/infantry-attack.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+	}
 }
-
-
 
 #contact-us {
-    margin: 10rem 0;
-    text-align: center;
+	margin: 10rem 0;
+	text-align: center;
 
-    .contact-us-grid {
-        margin-top: 5rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
+	.contact-us-grid {
+		margin-top: 5rem;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
 
-        .contact-us-grid-item {
+		.contact-us-grid-item {
+			i {
+				font-size: 5rem;
+				color: $dark-blue;
+			}
 
-            i {
-                font-size: 5rem;
-                color: $dark-blue;
-            }
-
-            a:nth-child(2) {
-                margin: 0 5rem;
-            }
-        }
-    }
+			a:nth-child(2) {
+				margin: 0 5rem;
+			}
+		}
+	}
 }
 
-
-
 footer {
-    height: 5rem;
-    display: flex;
-    align-items: center;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	padding-top: 1.5rem;
 }
