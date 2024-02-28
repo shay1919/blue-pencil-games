@@ -152,4 +152,31 @@ footer {
   padding-top: 1.5rem;
 }
 
+@media (max-width: 800px) {
+  .container {
+    padding: 1rem 2.5rem;
+  }
+  .container nav {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+  .container nav #logo {
+    padding-bottom: 2rem;
+  }
+  .container #our-story img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .container #our-games #game-grid {
+    grid-template-columns: 1fr;
+  }
+  .container #contact-us .contact-us-grid {
+    grid-template-columns: 1fr;
+  }
+  .container #contact-us .contact-us-grid .contact-us-grid-item:nth-child(1) {
+    padding-bottom: 5rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

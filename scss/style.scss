@@ -63,7 +63,9 @@ p {
 	padding: 2rem 5rem;
 }
 
-// Paper Backgrounds
+
+
+// Paper Background
 
 #paper-background {
 	background-image: url(../../dist/img/paper.jpg);
@@ -187,4 +189,54 @@ footer {
 	display: flex;
 	align-items: center;
 	padding-top: 1.5rem;
+}
+
+
+
+// Media Queries - Tablets
+
+@media (max-width: 800px) {}
+
+
+
+// Media Queries - Smartphones
+
+@media (max-width: 800px) {
+	.container {
+		padding: 1rem 2.5rem;
+
+		nav {
+			display: grid;
+			justify-content: center;
+			text-align: center;
+
+			#logo {
+				padding-bottom: 2rem;
+			}
+		}
+
+		#our-story {
+
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+
+		#our-games {
+			#game-grid {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		#contact-us {
+			.contact-us-grid {
+				grid-template-columns: 1fr;
+
+				.contact-us-grid-item:nth-child(1) {
+					padding-bottom: 5rem;
+				}
+			}
+		}
+	}
 }
